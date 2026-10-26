@@ -1,0 +1,86 @@
+{
+  "engine": "axe-core 4.10.3",
+  "violations": [
+    {
+      "id": "landmark-one-main",
+      "impact": "moderate",
+      "description": "Ensure the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "nodes": [
+        {
+          "target": [
+            "html"
+          ],
+          "html": "<html lang=\"en\">",
+          "summary": "Fix all of the following:\n  Document does not have a main landmark"
+        }
+      ]
+    },
+    {
+      "id": "region",
+      "impact": "moderate",
+      "description": "Ensure all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "tags": [
+        "cat.keyboard",
+        "best-practice"
+      ],
+      "nodes": [
+        {
+          "target": [
+            "h1"
+          ],
+          "html": "<h1>Student Grade Manager</h1>",
+          "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "target": [
+            "label[for=\"student-name\"]"
+          ],
+          "html": "<label for=\"student-name\">Student Name</label>",
+          "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "target": [
+            "#student-name"
+          ],
+          "html": "<input id=\"student-name\" type=\"text\">",
+          "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "target": [
+            "label[for=\"student-grade\"]"
+          ],
+          "html": "<label for=\"student-grade\">Grade</label>",
+          "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "target": [
+            "#student-grade"
+          ],
+          "html": "<input id=\"student-grade\" type=\"number\">",
+          "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "target": [
+            "h2"
+          ],
+          "html": "<h2>Students</h2>",
+          "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        },
+        {
+          "target": [
+            "#student-table"
+          ],
+          "html": "<table id=\"student-table\"><thead><tr><th>Name</th><th>Grade</th></tr></thead><tbody id=\"student-list\"></tbody></table>",
+          "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+        }
+      ]
+    }
+  ],
+  "passes": 18
+}

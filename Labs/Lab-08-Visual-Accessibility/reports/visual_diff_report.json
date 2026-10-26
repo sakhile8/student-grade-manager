@@ -1,0 +1,12 @@
+{
+  "baseline": "visual_baseline.png",
+  "comparison": "visual_after.png",
+  "viewport": {
+    "width": 1280,
+    "height": 900
+  },
+  "changed_pixels": 18506,
+  "total_pixels": 1152000,
+  "pixel_difference_percent": 1.61,
+  "threshold_per_pixel": 16
+}

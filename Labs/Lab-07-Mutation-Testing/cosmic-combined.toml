@@ -1,0 +1,8 @@
+[cosmic-ray]
+module-path = "../Lab-01-Environment-Setup-Manual-Defect-Hunting/student_grade_manager/grade_manager.py"
+timeout = 10.0
+excluded-modules = []
+test-command = "python -m pytest ../Lab-06-Test-Design/tests/ai_generated/test_ai_generated.py ../Lab-06-Test-Design/tests/manual/test_manual.py -q"
+
+[cosmic-ray.distributor]
+name = "local"

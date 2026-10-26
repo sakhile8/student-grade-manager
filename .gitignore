@@ -1,0 +1,11 @@
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.coverage
+.coverage.*
+.venv/
+venv/
+
+Labs/Lab-01-Environment-Setup-Manual-Defect-Hunting/student_grade_manager/.pylintrc.old
+Labs/Lab-01-Environment-Setup-Manual-Defect-Hunting/student_grade_manager/lint_report.txt
+Labs/Lab-01-Environment-Setup-Manual-Defect-Hunting/student_grade_manager/lint_report_after.txt

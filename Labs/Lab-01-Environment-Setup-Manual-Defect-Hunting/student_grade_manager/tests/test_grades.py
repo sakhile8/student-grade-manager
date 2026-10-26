@@ -94,3 +94,10 @@ def test_remove_student():
     assert result is True, "Should successfully remove student"
     assert len(manager.students) == 1
     assert manager.students[0]["name"] == "Karen"
+
+def test_format_report_for_nonexistent_student():
+    manager = GradeManager()
+
+    result = manager.format_report("Unknown")
+
+    assert result == "Student 'Unknown' not found"

@@ -1,0 +1,33 @@
+
+COMP 441 - LAB 7 MUTATION TESTING RESULTS
+
+Project: Student Grade Manager
+
+Baseline Test Suite (v1)
+- Tests passed: 35
+- Tests skipped: 16
+- Statement coverage: 98%
+- Mutations tested: 4
+- Mutations killed: 4
+- Mutations survived: 0
+- Mutation score: 100%
+
+Improved Test Suite (v2)
+- Tests passed: 36
+- Tests skipped: 16
+- Statement coverage: 100%
+- Mutations tested: 4
+- Mutations killed: 4
+- Mutations survived: 0
+- Mutation score: 100%
+
+Improvement
+A test was added for format_report() when the requested
+student does not exist. Statement coverage increased
+from 98% to 100%.
+
+Limitation
+The experiment used four manually selected mutations.
+The results do not establish the effectiveness of every
+possible test case or defect. Sixteen Library System
+tests remained skipped.

@@ -5,8 +5,8 @@
 Cosmic Ray 8.7.0 was used on `grade_manager.py`. Each run uses the Lab 6
 AI-generated tests, the manual tests, or both. The original AI-only and
 manual-only run databases are `cosmic-ai.sqlite` and `cosmic-manual.sqlite`;
-their configuration files are `cosmic-ai.toml` and `cosmic-manual.toml`. The
-combined run uses `cosmic-combined.toml`.
+their configuration files are in the Lab 7 folder. The combined run uses
+`cosmic-combined.toml`.
 
 | Suite | Mutants | Killed | Survived | Mutation score |
 |---|---:|---:|---:|---:|
@@ -18,9 +18,10 @@ combined run uses `cosmic-combined.toml`.
 
 The initial combined result is the mutant-by-mutant union of the stored AI and
 manual runs. Both suites killed the same 41 mutants, so combining them did not
-increase the initial score. The final AI-only and combined runs were rerun with Cosmic Ray after the new
-tests. The manual suite did not change. See the three suite-specific JSON
-reports and `lab7-final-results.json` for the recorded totals.
+increase the initial score. The final AI-only and combined runs were rerun with
+Cosmic Ray after the new tests. The manual suite did not change. See the
+suite-specific JSON reports and `lab7-final-results.json` for the recorded
+totals.
 
 Mutation score is `killed / (killed + survived) * 100`. Invalid and skipped
 mutants are excluded. The Lab 6 coverage logs report 69% statement coverage
@@ -35,13 +36,14 @@ mean assertions distinguished correct from incorrect behavior.
 | `get_average`: change `/` to `//` | Existing grades had whole-number averages, for which normal and floor division return the same value. | `test_get_average_preserves_fractional_averages` |
 | `get_passing_students`: change `>= 60` to `> 60` | The AI suite had no passing-student boundary assertion at exactly 60. | `test_get_passing_students_includes_exactly_sixty` |
 
-These tests are in `tests/ai_generated/test_ai_generated.py`. Together, they
-exercise the comparisons and result values that the original assertions
+These tests are in
+`../../Lab-06-Test-Design/tests/ai_generated/test_ai_generated.py`. Together,
+they exercise the comparisons and result values that the original assertions
 missed. See `lab7-final-results.json` for the measured final score.
 
 ## Reproduction
 
-From this project directory:
+From `Labs/Lab-07-Mutation-Testing`:
 
 ```powershell
 cosmic-ray baseline cosmic-ai.toml

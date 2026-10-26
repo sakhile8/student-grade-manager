@@ -1,0 +1,15 @@
+{
+  "tool": "Cosmic Ray 8.7.0",
+  "mutants": 114,
+  "before": {
+    "ai_only": {"killed": 41, "survived": 73, "score_percent": 35.96},
+    "manual_only": {"killed": 41, "survived": 73, "score_percent": 35.96},
+    "combined": {"killed": 41, "survived": 73, "score_percent": 35.96}
+  },
+  "after": {
+    "ai_only": {"killed": 58, "survived": 56, "score_percent": 50.88},
+    "combined": {"killed": 58, "survived": 56, "score_percent": 50.88}
+  },
+  "mutation_score_formula": "killed / (killed + survived) * 100",
+  "manual_suite_note": "No manual tests changed; its initial score remains 35.96%."
+}

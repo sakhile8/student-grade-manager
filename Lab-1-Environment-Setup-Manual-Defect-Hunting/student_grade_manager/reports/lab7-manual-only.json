@@ -1,0 +1,9 @@
+{
+  "tool": "Cosmic Ray 8.7.0",
+  "suite": "Manual tests",
+  "source": "grade_manager.py",
+  "mutants": 114,
+  "killed": 41,
+  "survived": 73,
+  "score_percent": 35.96
+}

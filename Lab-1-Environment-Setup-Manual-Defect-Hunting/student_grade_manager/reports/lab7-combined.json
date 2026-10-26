@@ -1,0 +1,19 @@
+{
+  "tool": "Cosmic Ray 8.7.0",
+  "suite": "AI-generated and manual tests",
+  "source": "grade_manager.py",
+  "initial": {
+    "mutants": 114,
+    "killed": 41,
+    "survived": 73,
+    "score_percent": 35.96,
+    "method": "Mutant-by-mutant union of the original AI-only and manual-only runs; both killed the same 41 mutants."
+  },
+  "final": {
+    "mutants": 114,
+    "killed": 58,
+    "survived": 56,
+    "score_percent": 50.88,
+    "method": "Cosmic Ray run with both suites and the three added AI-targeted tests."
+  }
+}

@@ -86,3 +86,28 @@ def test_remove_student_only_removes_matching_student():
 
     assert result is True
     assert manager.students == [{"name": "Bob", "grades": []}]
+
+
+def test_add_grade_does_not_match_a_different_existing_student():
+    manager = GradeManager()
+    manager.add_student("Alice")
+
+    result = manager.add_grade("Bob", 85)
+
+    assert result is False
+    assert manager.students == [{"name": "Alice", "grades": []}]
+
+
+def test_get_average_preserves_fractional_averages():
+    manager = GradeManager()
+    manager.add_student("Alice", [70, 71])
+
+    assert manager.get_average("Alice") == 70.5
+
+
+def test_get_passing_students_includes_exactly_sixty():
+    manager = GradeManager()
+    manager.add_student("Alice", [60])
+    manager.add_student("Bob", [59])
+
+    assert manager.get_passing_students() == ["Alice"]
